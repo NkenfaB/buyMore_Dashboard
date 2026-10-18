@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #f5f6f1;
+  color: #202d25;
+}
+button,
+input {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 3px solid #a16332;
+  outline-offset: 3px;
+}
+.admin-shell {
+  display: flex;
+  min-height: 100vh;
+}
+.admin-nav {
+  width: 225px;
+  flex-shrink: 0;
+  padding: 40px 24px;
+  background: #1d3429;
+  color: #f2f5e8;
+}
+.admin-brand {
+  font-weight: 800;
+  font-size: 2rem;
+  text-decoration: none;
+  color: inherit;
+}
+.admin-brand span {
+  display: block;
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  margin-top: 8px;
+}
+.admin-nav p {
+  font-size: 0.8rem;
+  color: #becdbf;
+  margin-top: 60px;
+}
+.admin-nav button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  text-align: left;
+  color: inherit;
+  border: 0;
+  background: transparent;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+.admin-nav button.active {
+  background: #d8e7b9;
+  color: #193728;
+}
+.nav-note {
+  font-size: 0.8rem;
+  line-height: 1.8;
+  color: #bdcbbd;
+  margin-top: 80px;
+}
+.admin-main {
+  padding: 44px;
+  max-width: 1500px;
+  width: 100%;
+  min-width: 0;
+}
+.admin-main header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.admin-main h1 {
+  font-size: 2.8rem;
+  letter-spacing: -0.06em;
+  margin: 8px 0;
+}
+.admin-main p {
+  line-height: 1.6;
+  color: #566358;
+}
+.admin-kicker {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+.count-badge {
+  background: #e4eadb;
+  border-radius: 30px;
+  padding: 10px 18px;
+  white-space: nowrap;
+}
+.admin-access {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #d6decf;
+  border-radius: 12px;
+  padding: 18px;
+  margin: 24px 0;
+}
+.admin-access span {
+  font-size: 0.75rem;
+  color: #576653;
+}
+.admin-access input {
+  flex: 1;
+  min-width: 160px;
+}
+.admin-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(260px, 1fr);
+  gap: 24px;
+}
+.catalog-list,
+.catalog-editor {
+  background: white;
+  border: 1px solid #dde2d7;
+  border-radius: 14px;
+  padding: 24px;
+}
+.admin-main h2 {
+  font-size: 1.2rem;
+}
+.list-heading {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.search-label {
+  font-size: 0.75rem;
+}
+.search-label input {
+  display: block;
+}
+.catalog-list ul {
+  padding: 0;
+  list-style: none;
+}
+.catalog-list li {
+  display: flex;
+  gap: 14px;
+  padding: 22px 0;
+  border-top: 1px solid #e4e9df;
+}
+.catalog-list li img {
+  height: 64px;
+  width: 64px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #edf0e7;
+}
+.catalog-list h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+.catalog-list p {
+  font-size: 0.85rem;
+  margin: 7px 0;
+  overflow-wrap: anywhere;
+}
+.catalog-list li span {
+  font-size: 0.75rem;
+  color: #59664d;
+}
+.row-actions {
+  display: grid;
+  gap: 8px;
+  margin-left: auto;
+  align-content: start;
+}
+.row-actions button,
+.admin-error button {
+  border: 1px solid #bdcbb6;
+  background: #f5f8ef;
+  border-radius: 6px;
+  padding: 7px 10px;
+}
+.catalog-editor label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+input {
+  border: 1px solid #b8c5b1;
+  border-radius: 7px;
+  background: white;
+  padding: 11px;
+  max-width: 100%;
+}
+.catalog-editor input {
+  display: block;
+  width: 100%;
+  margin-top: 7px;
+}
+.catalog-editor fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+.catalog-editor button {
+  padding: 12px;
+  border: 0;
+  border-radius: 7px;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+.catalog-editor .save-button {
+  background: #234e35;
+  color: white;
+}
+.admin-error {
+  padding: 15px;
+  background: #ffebe1;
+  color: #8a341e;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+.admin-notice {
+  padding: 14px;
+  background: #dfefcf;
+  border-radius: 8px;
+}
+.empty-catalog {
+  padding: 40px 0;
+}
+@media (max-width: 1100px) {
+  .admin-columns {
+    grid-template-columns: 1fr;
+  }
+  .admin-main {
+    padding: 26px;
+  }
+}
+@media (max-width: 650px) {
+  .admin-shell {
+    display: block;
+  }
+  .admin-nav {
+    width: 100%;
+    padding: 20px;
+  }
+  .admin-brand {
+    font-size: 1.5rem;
+  }
+  .admin-nav p,
+  .nav-note {
+    display: none;
+  }
+  .admin-nav button {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+  }
+  .admin-main {
+    padding: 22px 16px;
+  }
+  .catalog-list li {
+    flex-wrap: wrap;
+  }
+  .catalog-list,
+  .catalog-editor {
+    padding: 18px;
+  }
+}
+
+/* Keep editor controls comfortably sized after the shared CSS reset. */
+.catalog-editor input, .admin-access input { padding: 12px; min-height: 44px; }
+.search-label input { padding: 10px; min-height: 40px; }
